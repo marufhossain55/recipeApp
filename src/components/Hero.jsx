@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div className='w-[1325px] container mx-auto text-white mt-10'>
-      <div className='bg-[url(../src/assets/images/hero.png)] bg-no-repeat  text-center min-h-screen  bg-contain rounded-3xl '>
+      <div className='bg-[url(../src/assets/images/hero.png)] bg-no-repeat  text-center bg-contain rounded-3xl '>
         <div className='flex flex-col justify-center items-center gap-7 h-[600px]'>
           <h2 className='text-6xl font-bold'>
             Discover an exceptional cooking <br />

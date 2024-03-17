@@ -1,3 +1,5 @@
+import img1 from '../assets/images/avater.png';
+
 const Navbar = () => {
   return (
     <div className='container mx-auto mt-8'>
@@ -81,10 +83,7 @@ const Navbar = () => {
               className='btn btn-ghost btn-circle avatar'
             >
               <div className='w-10 rounded-full '>
-                <img
-                  alt='Tailwind CSS Navbar component'
-                  src='../src/assets/images/avater.png'
-                />
+                <img src={img1} alt='Tailwind CSS Navbar component' />
               </div>
             </div>
             <ul

@@ -1,4 +1,4 @@
-const Recipe = ({ recipes }) => {
+const Recipe = ({ recipe, handletableData }) => {
   const {
     recipe_name,
     recipe_image,
@@ -6,11 +6,12 @@ const Recipe = ({ recipes }) => {
     ingredients,
     preparing_time,
     calories,
-  } = recipes;
-  console.log(recipes);
+  } = recipe;
+  // console.log(recipes);
+
   return (
     <div>
-      <div className='card w-[379px] h-[700px] bg-base-100 shadow-xl mt-14'>
+      <div className='card w-[379px] h-[700px] bg-base-100 shadow-xl'>
         <figure className='h-72'>
           <img
             className='p-4 w-[331px] h-[200px] rounded-[35px]  '
@@ -34,7 +35,10 @@ const Recipe = ({ recipes }) => {
             <span>{calories} calories</span>
           </div>
           <div className=''>
-            <button className='btn bg-green-400 rounded-3xl  text-base mt-6'>
+            <button
+              onClick={() => handletableData(recipe)}
+              className='btn bg-green-400 rounded-3xl  text-base mt-6'
+            >
               Want to Cook
             </button>
           </div>

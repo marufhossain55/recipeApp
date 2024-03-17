@@ -11,7 +11,7 @@
       "200 g basil leaves",
       "400 g assorted mushrooms, sliced"
     ],
-    "preparing_time": "30 min",
+    "preparing_time": 30,
     "calories": 320
   },
   {
@@ -27,7 +27,7 @@
 
       "Parmesan cheese, grated (to taste)"
     ],
-    "preparing_time": "20 min",
+    "preparing_time": 20,
     "calories": 450
   },
   {
@@ -42,7 +42,7 @@
       "1 bell pepper, sliced",
       "1 cup chopped mushrooms"
     ],
-    "preparing_time": "15 min",
+    "preparing_time": 15,
     "calories": 350
   },
   {
@@ -57,7 +57,7 @@
       "Salt and pepper to taste",
       "1 ripe mango, diced"
     ],
-    "preparing_time": "25 min",
+    "preparing_time": 25,
     "calories": 400
   },
   {
@@ -73,7 +73,7 @@
       "2 tsp pure vanilla extract",
       "1 tsp baking soda"
     ],
-    "preparing_time": "20 min",
+    "preparing_time": 20,
     "calories": 250
   },
   {
@@ -88,7 +88,7 @@
       "2 cloves garlic, minced",
       "1 tsp dried thyme"
     ],
-    "preparing_time": "40 min",
+    "preparing_time": 40,
     "calories": 180
   }
 ]

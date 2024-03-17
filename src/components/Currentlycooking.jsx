@@ -30,15 +30,17 @@ const Currentlycooking = ({ currentCooks }) => {
               <td></td>
               <td></td>
               <td className='px-4 py-2'>
-                Total Time: <br />
+                Total Time = <br />
                 {currentCooks.reduce(
                   (prev, curr) => prev + curr.preparing_time,
                   0
                 )}
+                &nbsp; minutes
               </td>
               <td className='px-4 py-2'>
-                Total Calories: <br />
+                Total Calories = <br />
                 {currentCooks.reduce((prev, curr) => prev + curr.calories, 0)}
+                &nbsp; Calories
               </td>
             </tr>
           </tbody>

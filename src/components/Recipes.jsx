@@ -47,8 +47,8 @@ const Recipes = () => {
           palate and occasion.
         </p>
       </div>
-      <div className='flex justify-around container mx-auto mt-14'>
-        <div className='grid grid-cols-2 gap-5  '>
+      <div className='flex flex-col lg:flex-row justify-around container mx-auto mt-14'>
+        <div className='grid lg:grid-cols-2 gap-5  '>
           {recipes.map((recipes) => (
             <Recipe
               key={recipes.recipe_id}

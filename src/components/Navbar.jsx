@@ -4,7 +4,11 @@ const Navbar = () => {
       <div className='navbar bg-base-100'>
         <div className='navbar-start'>
           <div className='dropdown'>
-            <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
+            <div
+              tabIndex={0}
+              role='button'
+              className='btn btn-ghost lg:hidden pl-0 ml-0 pr-2'
+            >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='h-5 w-5'
@@ -43,7 +47,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className='btn btn-ghost text-xl'>Recipe Calories</a>
+          <a className='btn btn-ghost text-xl pl-0 ml-0'>Recipe Calories</a>
         </div>
         <div className='navbar-center hidden lg:flex'>
           <ul className='menu menu-horizontal px-1'>
@@ -63,7 +67,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='navbar-end'>
-          <div className='form-control'>
+          <div className='form-control mr-4'>
             <input
               type='text'
               placeholder='Search'
@@ -76,10 +80,10 @@ const Navbar = () => {
               role='button'
               className='btn btn-ghost btn-circle avatar'
             >
-              <div className='w-10 rounded-full'>
+              <div className='w-10 rounded-full '>
                 <img
                   alt='Tailwind CSS Navbar component'
-                  src='https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'
+                  src='../src/assets/images/avater.png'
                 />
               </div>
             </div>

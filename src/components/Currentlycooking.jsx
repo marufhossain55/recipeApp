@@ -3,11 +3,12 @@ const Currentlycooking = ({ currentCooks }) => {
     <div>
       <div className='h-[15%]'>
         <h3 className='text-xl font-semibold border-b-2 mx-20 pb-6'>
-          Currently : {currentCooks.length}
+          Currently Cooking: {currentCooks.length}
         </h3>
-        <table className='table-auto mx-auto mt-6 space-x-96'>
+        <table className='table-auto mx-auto mt-6 '>
           <thead>
             <tr>
+              <th></th>
               <th>Name</th>
               <th>Time</th>
               <th>calories</th>
@@ -16,27 +17,27 @@ const Currentlycooking = ({ currentCooks }) => {
           <tbody>
             {currentCooks.map((tdata, idx) => {
               return (
-                <tr key={idx}>
+                <tr key={idx} className='bg-[#2828280e]  border'>
                   <td>{idx + 1}</td>
-                  <td>{tdata.recipe_name}</td>
-                  <td>{tdata.preparing_time}</td>
-                  <td>{tdata.calories}</td>
+                  <td className='px-4 py-2'>{tdata.recipe_name}</td>
+                  <td className='px-4 py-2'>{tdata.preparing_time}</td>
+                  <td className='px-4 py-2'>{tdata.calories}</td>
                 </tr>
               );
             })}
+
             <tr>
               <td></td>
               <td></td>
-              <td>
-                Total Time:
+              <td className='px-4 py-2'>
+                Total Time: <br />
                 {currentCooks.reduce(
                   (prev, curr) => prev + curr.preparing_time,
                   0
                 )}
               </td>
-              <td>
-                {' '}
-                Total Calories:
+              <td className='px-4 py-2'>
+                Total Calories: <br />
                 {currentCooks.reduce((prev, curr) => prev + curr.calories, 0)}
               </td>
             </tr>

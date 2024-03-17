@@ -1,3 +1,5 @@
+import { FaClock } from 'react-icons/fa';
+import { FaFire } from 'react-icons/fa';
 const Recipe = ({ recipe, handletableData }) => {
   const {
     recipe_name,
@@ -31,8 +33,22 @@ const Recipe = ({ recipe, handletableData }) => {
             ))}
           </div>
           <div className='inline-flex  space-x-10'>
-            <span>{preparing_time}</span>
-            <span>{calories} calories</span>
+            <span>
+              <div className='flex justify-center items-center gap-2'>
+                <div>
+                  <FaClock />
+                </div>
+                <div>{preparing_time} minutes</div>
+              </div>
+            </span>
+            <span>
+              <div className='flex justify-center items-center gap-2'>
+                <div>
+                  <FaFire />
+                </div>
+                <div>{calories} calories</div>
+              </div>
+            </span>
           </div>
           <div className=''>
             <button
